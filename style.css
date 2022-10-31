@@ -10,7 +10,59 @@ body {
   margin: 0;
   overflow-x: hidden;
   position: relative;
+  color: #fff;
 }
+
+/* NAV CONTAINER  */
+
+.container {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 50px;
+}
+
+.circle-container {
+  position: fixed;
+  top: -100px;
+  left: -100px;
+}
+
+.circle {
+  background: linear-gradient(#b8e994, #78e08f);
+  height: 200px;
+  width: 200px;
+  position: relative;
+  transition: transform 0.5s linear;
+}
+
+.circle button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100px;
+  background: transparent;
+  border: none;
+  font-size: 26px;
+  color: #fff;
+}
+
+.circle button:focus {
+  outline: none;
+}
+
+.circle button#open {
+  left: 65%;
+}
+
+.circle button#close {
+  top: 60%;
+  transform: rotate(90deg);
+  transform-origin: top left;
+}
+
+/* NAV */
+
+/* HEADING */
 
 h1 {
   font-family: "Merriweather", serif;
@@ -31,6 +83,8 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+  transform-origin: top left;
+  transition: transform 0.5s linear;
 }
 
 .text-start {
@@ -45,4 +99,17 @@ h1 {
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   color: transparent;
+}
+
+/* CONTENT */
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-img {
+  max-width: 50%;
 }
