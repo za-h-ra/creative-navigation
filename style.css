@@ -103,6 +103,18 @@ body {
 }
 /* HEADING */
 
+.title {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-origin: top left;
+  transition: transform 0.5s linear;
+}
+
 h1 {
   font-family: "Merriweather", serif;
   font-weight: 900;
@@ -114,18 +126,6 @@ h1 {
   -webkit-text-stroke: 2px;
   line-height: 1em;
   z-index: 100;
-}
-
-.title {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transform-origin: top left;
-  transition: transform 0.5s linear;
 }
 
 .text-start {
@@ -155,4 +155,42 @@ h1 {
 
 .main-img {
   max-width: 500px;
+}
+
+.text-content {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #b8e994;
+  padding: 25px;
+}
+
+.cta {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 25px;
+  padding: 10px;
+}
+
+.cta-button {
+  outline: none;
+  border: none;
+  background-color: #b8e994;
+  font-weight: 700;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  cursor: pointer;
+  letter-spacing: 0.2px;
+}
+
+.cta-button:hover {
+  background-color: #78e08f;
+}
+
+.cta-button:active {
+  transform: scale(0.98);
+}
+
+.cta-button:focus {
+  outline: 0;
 }
