@@ -59,7 +59,7 @@ body {
 }
 
 .square button#close {
-  top: 60%;
+  top: 78%;
   transform: rotate(90deg);
   transform-origin: top left;
 }
@@ -74,6 +74,8 @@ body {
   margin: 0;
   padding: 300px 50px;
   list-style-type: none;
+  transform: translateX(-200%);
+  transition: transform 0.5s ease-in;
 }
 
 .list-item {
@@ -102,7 +104,13 @@ body {
 }
 
 .container.show-nav + nav ul {
+  transform: translateX(0);
+  transition-delay: 0.3s;
   background-color: #3d3d3d;
+}
+
+.container.show-nav .square {
+  transform: rotate(-70deg);
 }
 
 /* HEADING */
